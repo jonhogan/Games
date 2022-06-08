@@ -69,7 +69,7 @@ while (gameLoop){
         pOneTurn = false;
     }
 
-    
+    hud(mHealth, cHealth, level);
 
 }
 
@@ -81,4 +81,10 @@ int PlayerOne(){
 
     // Return the player defined distance
     return dist;
+}
+
+void hud(int mHealth, int cHealth, int level){
+
+    Console.WriteLine("Manticore: " + mHealth)
+
 }
