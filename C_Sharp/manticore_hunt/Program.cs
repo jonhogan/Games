@@ -58,8 +58,27 @@ int pTwoGuess;              // Guess from Player two
 while (gameLoop){
 
     while (pOneTurn){
+        // First round of the game
+        // Set Manticore and City health and level
         mHealth = 10;
         cHealth = 15;
+        level = 1;
+
+        // Method call to set the distance
+        distance = PlayerOne();
+        pOneTurn = false;
     }
 
+    
+
+}
+
+int PlayerOne(){
+    int dist;
+    Console.Write("What is the distance do you want to set the Manticore? (Enter a number between 0-100): ");
+    dist = Convert.ToInt32(Console.ReadLine());
+    Console.Clear();
+
+    // Return the player defined distance
+    return dist;
 }
