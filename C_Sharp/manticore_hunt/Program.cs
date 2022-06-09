@@ -44,16 +44,16 @@
 
     Most rounds the player will deal 1 point of damage per hit on the Manticore. If the rounds level is a multiple of 3 (level % 3 = 0), the play will deal 3
     points of lightning damage. If the rounds level is a multiple of 5 (level % 5 = 0), the play will deal 5 points of fire damage. However, if the level is a
-    multiple of both 3 and 5, the player will deal a total of 8 points of fire and lightning damage.
+    multiple of both 3 and 5, the player will deal a total of 10 points of fire and lightning damage.
 */
 
-int mHealth;                // Manticore health
-int cHealth;                // City health
-int level;                  // Level/round the game it on.
+int mHealth = 0;                // Manticore health
+int cHealth = 0;                // City health
+int level = 0;                  // Level/round the game it on.
 bool gameLoop = true;       
 bool pOneTurn = true;       // Tracks if player one has made their turn
-int distance;               // Distance of the Manticore
-int pTwoGuess;              // Guess from Player two
+int distance = 0;               // Distance of the Manticore
+//int pTwoGuess = 0;              // Guess from Player two
 
 while (gameLoop){
 
@@ -70,6 +70,7 @@ while (gameLoop){
     }
 
     hud(mHealth, cHealth, level);
+    mHealth = p2Turn(mHealth, level, distance);
 
 }
 
@@ -84,7 +85,27 @@ int PlayerOne(){
 }
 
 void hud(int mHealth, int cHealth, int level){
+    // Display the level status
+    Console.WriteLine("Status:   Level: " + level + "   City Health: " + cHealth + "/15   Manticore Health: " + mHealth + "/10");
 
-    Console.WriteLine("Manticore: " + mHealth)
+    // Inform the player how much damage can be expected this round
+    if(level%3 == 0 && level%5 == 0){
+        Console.WriteLine("The cannon is expected to deal 10 point of damage this round.");
+    }else if(level%3 == 0){
+        Console.WriteLine("The cannon is expected to deal 3 point of damage this round.");
+    }else if(level%5 == 0){
+        Console.WriteLine("The cannon is expected to deal 5 point of damage this round.");
+    }else{
+        Console.WriteLine("The cannon is expected to deal 1 point of damage this round.");
+    }
 
+}
+
+int p2Turn(int mant, int lev, int dist){
+    // Set default damage to 0
+    int dmg = 0;
+
+
+
+    return (mant -= dmg);
 }

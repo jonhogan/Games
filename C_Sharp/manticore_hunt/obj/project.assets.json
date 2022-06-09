@@ -8,26 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Fhaze\\.nuget\\packages\\": {}
+    "/home/jon/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "L:\\github\\Games\\C_Sharp\\manticore_hunt\\manticore_hunt.csproj",
+      "projectUniqueName": "/home/jon/git/Games/C_Sharp/manticore_hunt/manticore_hunt.csproj",
       "projectName": "manticore_hunt",
-      "projectPath": "L:\\github\\Games\\C_Sharp\\manticore_hunt\\manticore_hunt.csproj",
-      "packagesPath": "C:\\Users\\Fhaze\\.nuget\\packages\\",
-      "outputPath": "L:\\github\\Games\\C_Sharp\\manticore_hunt\\obj\\",
+      "projectPath": "/home/jon/git/Games/C_Sharp/manticore_hunt/manticore_hunt.csproj",
+      "packagesPath": "/home/jon/.nuget/packages/",
+      "outputPath": "/home/jon/git/Games/C_Sharp/manticore_hunt/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Fhaze\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/jon/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -60,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
       }
     }
   }
