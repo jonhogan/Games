@@ -53,7 +53,7 @@ int level = 0;                  // Level/round the game it on.
 bool gameLoop = true;       
 bool pOneTurn = true;       // Tracks if player one has made their turn
 int distance = 0;               // Distance of the Manticore
-//int pTwoGuess = 0;              // Guess from Player two
+char replay = 'y';
 
 while (gameLoop){
 
@@ -71,6 +71,34 @@ while (gameLoop){
 
     hud(mHealth, cHealth, level);
     mHealth = p2Turn(mHealth, level, distance);
+    --cHealth; // The Manticore AirShip deals one point of damage to the city per round
+    level++;   // Increase the level each round
+
+    if (mHealth < 1 || cHealth < 1){
+        
+        if(mHealth < 1){
+            Console.WriteLine("You have destroyed the Airship, Manticore!");
+            Console.Write("Would you like to play again? (y/n): ");
+            replay = Convert.ToChar(Console.ReadKey());
+
+            if (replay == 'y'){
+                pOneTurn = true;
+            }else{
+                gameLoop = false;
+            }
+        }else if(cHealth < 1){
+            Console.WriteLine("The Airship has destroyed you city. Better luck next time.");
+            Console.Write("Would you like to play again? (y/n): ");
+            replay = Convert.ToChar(Console.ReadKey());
+
+            if (replay == 'y'){
+                pOneTurn = true;
+            }else{
+                gameLoop = false;
+            }
+        }
+
+    }
 
 }
 
@@ -86,6 +114,7 @@ int PlayerOne(){
 
 void hud(int mHealth, int cHealth, int level){
     // Display the level status
+    Console.Clear();
     Console.WriteLine("Status:   Level: " + level + "   City Health: " + cHealth + "/15   Manticore Health: " + mHealth + "/10");
 
     // Inform the player how much damage can be expected this round
@@ -104,7 +133,6 @@ void hud(int mHealth, int cHealth, int level){
 int p2Turn(int mant, int lev, int dist){
     // Set default damage to 0
     int dmg = 0;
-    int manticore = mant;
     int pGuess; // Player 2 guess
 
     Console.Write("What range would you like to fire at? (0-100) ");
@@ -119,7 +147,7 @@ int p2Turn(int mant, int lev, int dist){
         Console.WriteLine("Your shot fell short!");
     }else if(pGuess > dist){
         Console.WriteLine("You overshot your target!");
-    }else(
+    }else{ // If hit, calculate the damage done
 
         if(lev % 3 == 0 && lev % 5 == 0){
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
@@ -131,15 +159,19 @@ int p2Turn(int mant, int lev, int dist){
             Console.WriteLine("You hit the Manticore for 3 points of Lightning damage!");
             dmg = 3;
             Console.ForegroundColor = ConsoleColor.White;
-        }else{
+        }else if (level % 5 == 0){
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("You hit the Manticore for 5 points of Fire damage!");
             dmg = 5;
             Console.ForegroundColor = ConsoleColor.White;
+        }else{
+            Console.WriteLine("You hit the Manticore for 1 points of normal damage!");
+            dmg = 1;
         }
-    )
 
+    }
 
+    Thread.Sleep(500);
 
-    return (manticore -= dmg);
+    return (mant -= dmg);
 }
