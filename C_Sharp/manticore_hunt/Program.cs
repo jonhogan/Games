@@ -104,8 +104,42 @@ void hud(int mHealth, int cHealth, int level){
 int p2Turn(int mant, int lev, int dist){
     // Set default damage to 0
     int dmg = 0;
+    int manticore = mant;
+    int pGuess; // Player 2 guess
+
+    Console.Write("What range would you like to fire at? (0-100) ");
+    pGuess = Convert.ToInt32(Console.ReadLine());
+
+    while(pGuess < 0 || pGuess > 100){
+        Console.Write("Invalid guess, please try again. Enter a guess from 0 to 100:  ");
+        pGuess = Convert.ToInt32(Console.ReadLine());
+    }
+
+    if(pGuess < dist){
+        Console.WriteLine("Your shot fell short!");
+    }else if(pGuess > dist){
+        Console.WriteLine("You overshot your target!");
+    }else(
+
+        if(lev % 3 == 0 && lev % 5 == 0){
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine("You hit the Manticore for 10 points of Lightning and Fire damage!");
+            dmg = 10;
+            Console.ForegroundColor = ConsoleColor.White;
+        }else if(level % 3 == 0){
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("You hit the Manticore for 3 points of Lightning damage!");
+            dmg = 3;
+            Console.ForegroundColor = ConsoleColor.White;
+        }else{
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("You hit the Manticore for 5 points of Fire damage!");
+            dmg = 5;
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+    )
 
 
 
-    return (mant -= dmg);
+    return (manticore -= dmg);
 }
