@@ -79,7 +79,7 @@ while (gameLoop){
         if(mHealth < 1){
             Console.WriteLine("You have destroyed the Airship, Manticore!");
             Console.Write("Would you like to play again? (y/n): ");
-            replay = Convert.ToChar(Console.ReadKey());
+            replay = Convert.ToChar(Console.ReadLine());
 
             if (replay == 'y'){
                 pOneTurn = true;
@@ -89,7 +89,7 @@ while (gameLoop){
         }else if(cHealth < 1){
             Console.WriteLine("The Airship has destroyed you city. Better luck next time.");
             Console.Write("Would you like to play again? (y/n): ");
-            replay = Convert.ToChar(Console.ReadKey());
+            replay = Convert.ToChar(Console.ReadLine());
 
             if (replay == 'y'){
                 pOneTurn = true;
