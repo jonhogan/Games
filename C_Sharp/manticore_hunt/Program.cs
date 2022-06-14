@@ -42,8 +42,8 @@
 
     The Manticore will damage the city for 1 point each round it survives.
 
-    Most rounds the player will deal 1 point of damage per hit on the Manticore. If the rounds level is a multiple of 3 (level % 3 = 0), the play will deal 3
-    points of lightning damage. If the rounds level is a multiple of 5 (level % 5 = 0), the play will deal 5 points of fire damage. However, if the level is a
+    Most rounds the player will deal 1 point of damage per hit on the Manticore. If the rounds level is a multiple of 3 (level % 3 = 0), the player will deal 3
+    points of lightning damage. If the rounds level is a multiple of 5 (level % 5 = 0), the player will deal 5 points of fire damage. However, if the level is a
     multiple of both 3 and 5, the player will deal a total of 10 points of fire and lightning damage.
 */
 
