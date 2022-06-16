@@ -1,0 +1,15 @@
+/home/jon/git/Games/C_Sharp/enums/obj/Debug/net6.0/enums.csproj.AssemblyReference.cache
+/home/jon/git/Games/C_Sharp/enums/obj/Debug/net6.0/enums.GeneratedMSBuildEditorConfig.editorconfig
+/home/jon/git/Games/C_Sharp/enums/obj/Debug/net6.0/enums.AssemblyInfoInputs.cache
+/home/jon/git/Games/C_Sharp/enums/obj/Debug/net6.0/enums.AssemblyInfo.cs
+/home/jon/git/Games/C_Sharp/enums/obj/Debug/net6.0/enums.csproj.CoreCompileInputs.cache
+/home/jon/git/Games/C_Sharp/enums/bin/Debug/net6.0/enums
+/home/jon/git/Games/C_Sharp/enums/bin/Debug/net6.0/enums.deps.json
+/home/jon/git/Games/C_Sharp/enums/bin/Debug/net6.0/enums.runtimeconfig.json
+/home/jon/git/Games/C_Sharp/enums/bin/Debug/net6.0/enums.dll
+/home/jon/git/Games/C_Sharp/enums/bin/Debug/net6.0/enums.pdb
+/home/jon/git/Games/C_Sharp/enums/obj/Debug/net6.0/enums.dll
+/home/jon/git/Games/C_Sharp/enums/obj/Debug/net6.0/refint/enums.dll
+/home/jon/git/Games/C_Sharp/enums/obj/Debug/net6.0/enums.pdb
+/home/jon/git/Games/C_Sharp/enums/obj/Debug/net6.0/enums.genruntimeconfig.cache
+/home/jon/git/Games/C_Sharp/enums/obj/Debug/net6.0/ref/enums.dll

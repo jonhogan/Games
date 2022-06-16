@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MeHMW/vhGAwnw43iAqfgX2/EgZbj+BFp+/1/6i5C5XgrHNU3LYZtm3QItnmqtx92C1EI9uKWQXrR8LQtcX0mqg==",
+  "dgSpecHash": "RCXfrJApm2VLHM1wpu65W1JQjC9NchoachXpYrPWgWpyyCA/v8Hq3K6uavB9aXqzDptClncusBA4kDVPGs5cOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jonho\\OneDrive\\Documents\\git\\Games\\C_Sharp\\enums\\enums.csproj",
+  "projectFilePath": "/home/jon/git/Games/C_Sharp/enums/enums.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

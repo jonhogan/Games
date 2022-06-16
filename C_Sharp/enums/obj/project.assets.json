@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jonho\\.nuget\\packages\\": {}
+    "/home/jon/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jonho\\OneDrive\\Documents\\git\\Games\\C_Sharp\\enums\\enums.csproj",
+      "projectUniqueName": "/home/jon/git/Games/C_Sharp/enums/enums.csproj",
       "projectName": "enums",
-      "projectPath": "C:\\Users\\jonho\\OneDrive\\Documents\\git\\Games\\C_Sharp\\enums\\enums.csproj",
-      "packagesPath": "C:\\Users\\jonho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jonho\\OneDrive\\Documents\\git\\Games\\C_Sharp\\enums\\obj\\",
+      "projectPath": "/home/jon/git/Games/C_Sharp/enums/enums.csproj",
+      "packagesPath": "/home/jon/.nuget/packages/",
+      "outputPath": "/home/jon/git/Games/C_Sharp/enums/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jonho\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/jon/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
       }
     }
   }
