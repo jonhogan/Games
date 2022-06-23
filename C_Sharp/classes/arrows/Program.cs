@@ -59,7 +59,7 @@ class arrow{
     private string fletching;
     private string arrowHead;
     private double length;
-    arrow(){
+    public arrow(){
             fletching = "chicken";
             arrowHead = "wood";
             length = 60.0;
