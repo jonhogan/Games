@@ -3,6 +3,7 @@
  * You can't say you are learning a language with out
  * doing "Hello World".
  */
+package learning.java_lang.hello_world;
 
 public class hello{
 
