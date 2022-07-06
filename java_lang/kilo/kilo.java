@@ -11,7 +11,10 @@ import java.util.*;
 public class kilo {
 
     public static void main(String[] arg){
+
+        //Set up to receive input from the user
         Scanner input = new Scanner(System.in);
+
         double kilo = 0.45359237;
         double pounds;
         double poundsToKilos;
@@ -23,6 +26,9 @@ public class kilo {
 
         System.out.println();
         System.out.println("The weight in kilograms is: " + poundsToKilos);
+        
+        //Close the scanner after it is no longer needed
+        input.close();
 
     }
 
