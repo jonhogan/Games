@@ -1,7 +1,7 @@
 //package learning.java_lang.kilo;
 import java.util.*;
 
-/*
+/**
  * Short program to convert pounds to kilos
  * @version 1.0 07/05/2022
  * @author Jon Hogan
