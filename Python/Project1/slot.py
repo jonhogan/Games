@@ -27,6 +27,8 @@ def get_number_of_lines():
 
 def main():
     balance = deposit()
+    plays = get_number_of_lines()
+    print('You have $', balance, 'and are playing', plays, 'lines.')
 
 
 main()
