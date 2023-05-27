@@ -4,4 +4,4 @@
 
 | Chapter | Main Topic |     |                 Description                 |
 | :-----: | :--------: | :-: | :-----------------------------------------: |
-|    1    |   Basics   |     | Covers expressions and hoe to use the Shell |
+|    1    |   Basics   |     | Covers expressions and how to use the Shell |
