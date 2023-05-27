@@ -1,6 +1,6 @@
 # Using Automate the Boring Stuff With Python
 
-## Book by Al Sweigart
+[Book by Al Sweigart](https://automatetheboringstuff.com/)
 
 | Chapter | Main Topic |     |               Description               |
 | :-----: | :--------: | :-: | :-------------------------------------: |
