@@ -2,6 +2,6 @@
 
 [Book by Al Sweigart](https://automatetheboringstuff.com/)
 
-| Chapter | Main Topic |     |               Description               |
-| :-----: | :--------: | :-: | :-------------------------------------: |
-|    1    |   Basics   |     | Using the Shell and learning data types |
+| Chapter | Main Topic |     |                 Description                 |
+| :-----: | :--------: | :-: | :-----------------------------------------: |
+|    1    |   Basics   |     | Covers expressions and hoe to use the Shell |
