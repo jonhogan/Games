@@ -21,28 +21,27 @@ def get_continue():
 
 
 def print_menu():
-        '''TODO add a list of options, ask user to make a selection
-           print choices and pass the option back to the main function'''
-        print("Would you like to: ADD, EDIT, SHOW, or EXIT? ")
-        selections = ["ADD", "EDIT", "SHOW", "COMPLETE", "EXIT"]
-        for i, selection in enumerate(selections, 1):
-            print(f" {i} : {selection}")
+    print("Would you like to: ADD, EDIT, SHOW, or EXIT? ")
+    selections = ["ADD", "EDIT", "SHOW", "COMPLETE", "EXIT"]
+    for i, selection in enumerate(selections, 1):
+        print(f" {i} : {selection}")
         
-        option = input("Enter option here: ")
+    option = input("Enter option here: ")
 
-        if option.isdigit():
-            return int(option)
-        else:
-            return option.lower().strip()
+    if option.isdigit():
+        return int(option)
+    else:
+        return option.lower().strip()
 
 def make_list():
     todo_list = []
     add_more = True
 
     while add_more:
-        todo_list.append(input("What is your to do item? "))
+        todo_list.append(input("What is your to do item? ") + "\n")
         add_more = get_continue()
-
+    file = open('todo.txt', 'w')
+    file.writelines(todo_list)
     return todo_list
 def complete_item(todo_list):
     print_todo(todo_list)
