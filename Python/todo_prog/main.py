@@ -20,8 +20,10 @@ def add_todo():
 def read_file():
     """Reads todo.txt file and returns list of to-dos"""
     todo_list = []
+    # get the path of the script
     script_dir = get_script_dir()
     the_list = os.path.join(script_dir, 'todo.txt')
+    # if todo.txt doesn't exist, create it
     if not os.path.exists(the_list):
         with open(the_list, 'w') as file:
             pass
@@ -32,6 +34,7 @@ def read_file():
 
 def write_file(todo_list):
     """Writes todo_list to todo.txt"""
+    # get the path of the script
     script_dir = get_script_dir()
     the_list = os.path.join(script_dir, 'todo.txt')
     with open(the_list, 'w') as file:
