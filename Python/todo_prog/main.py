@@ -1,5 +1,17 @@
 """Updated Todo program"""
 
+import os
+import sys
+
+def get_script_dir():
+    """Returns the directory of the main script or current file"""
+    main_module = sys.modules['__main__']
+    if hasattr(main_module, '__file__'):
+        return os.path.dirname(os.path.abspath(main_module.__file__))
+    if hasattr(main_module, '__spec__') and main_module.__spec__ and main_module.__spec__.origin:
+        return os.path.dirname(os.path.abspath(main_module.__spec__.origin))
+    return os.getcwd()  # fallback to the current working directory
+
 
 def add_todo():
     todo = input('Enter a todo: ')
@@ -8,14 +20,21 @@ def add_todo():
 def read_file():
     """Reads todo.txt file and returns list of to-dos"""
     todo_list = []
-    with open('todo.txt', 'r') as file:
+    script_dir = get_script_dir()
+    the_list = os.path.join(script_dir, 'todo.txt')
+    if not os.path.exists(the_list):
+        with open(the_list, 'w') as file:
+            pass
+    with open(the_list, 'r') as file:
         for line in file:
             todo_list.append(line.strip())
     return todo_list
 
 def write_file(todo_list):
     """Writes todo_list to todo.txt"""
-    with open('todo.txt', 'w') as file:
+    script_dir = get_script_dir()
+    the_list = os.path.join(script_dir, 'todo.txt')
+    with open(the_list, 'w') as file:
         for todo in todo_list:
             this_todo = todo + '\n'
             file.write(this_todo)
