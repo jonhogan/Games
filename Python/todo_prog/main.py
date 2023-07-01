@@ -40,13 +40,13 @@ def write_file(todo_list):
     with open(the_list, 'w') as file:
         for todo in todo_list:
             this_todo = todo + '\n'
-            file.write(this_todo)
+            file.writelines(this_todo)
 
 def print_menu():
     """Prints menu and returns choice"""
     selections = ["ADD", "EDIT", "SHOW", "COMPLETE", "EXIT"]
     for i, selection in enumerate(selections, 1):
-        print(f" {i} : {selection}")
+        print(f"{i} : {selection}")
 
     option = input("Enter option here: ")
 
@@ -57,6 +57,7 @@ def print_menu():
     
 def print_todo_list(todo_list):
     """Prints todo_list"""
+    print("To Do List:")
     for i, todo in enumerate(todo_list, 1):
         print( f"{i}: {todo}")
 
