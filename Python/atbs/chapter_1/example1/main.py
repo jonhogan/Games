@@ -1,3 +1,5 @@
+import random
+
 """
 Math operations in Python
 """
@@ -16,15 +18,15 @@ Operators  |   Operation    |   Example    |   Result
 
 # All of these can be done in the python shell
 # you do not need to use the print function in the shell
-print (2 + 3 * 6)
-print ((2 + 3) * 6)
-print (48565878 * 578453)
-print (2 ** 8)
-print (23 / 7)
-print (23 // 7)
-print (23 % 7)
-print (2 + 2)
-print ((5 - 1) * ((7 + 1) / (3 - 1)))
+print(2 + 3 * 6)
+print((2 + 3) * 6)
+print(48565878 * 578453)
+print(2 ** 8)
+print(23 / 7)
+print(23 // 7)
+print(23 % 7)
+print(2 + 2)
+print((5 - 1) * ((7 + 1) / (3 - 1)))
 
 """
 Data types in Python
@@ -43,11 +45,39 @@ Dictionary              |   {'name': 'John', 'age': 42}               |   Unorde
 """
 
 # You can check the data type of a value by using the type() function
-print (type(2))
-print (type(42.0))
-print (type('Hello World!'))
-print (type(True))
+print(type(2))
+print(type(42.0))
+print(type('Hello World!'))
+print(type(True))
 
 """
 Variables in Python
+
+Variables are like boxes that store data.
+
+x = True        This is a boolean, x will always equal True
+x = y > z       This is also a boolean, x will be True only if the value of y is greater than z
+x = 1           This is an integer, Variables can store all data types
+
+Python does not use static types. In a language such as C++, the above would not be used, instead the following:
+
+int x = 1;
+bool y = False;
+bool z = a < b;
+
+Dynamic typing in Python means you could use the same variable name for multiple types of data, but the previously
+stored data would be over written
+"""
+
+x = 1
+print(f'The {type(x)} value of "x" is {x}.')
+y = random.randint(0, 100)
+z = random.randint(0, 100)
+
+x = y > z
+
+print(f'The {type(x)} value of "x" is {x}. The value of "y" is {y}, and the value of "z" is {z}, and the operation stored in x is "y > z".')
+
+"""
+First x was an integer value, now x is an boolean
 """
