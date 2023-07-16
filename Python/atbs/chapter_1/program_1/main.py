@@ -23,4 +23,9 @@ for greeting in greetings:
 This programs involves creating a list of strings, printing a
 string message to the console, looping through the list, and
 printing the stored data in each element
+
+Let's get the name of the user, and say hello to them
 '''
+
+name = input("What is your name? ")
+print(f"Welcome to the world of programming in Python, {name}!")
