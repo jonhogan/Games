@@ -64,3 +64,19 @@ print(numbers)
 To access items individual items of a list in a list (like a 2D array)
 '''
 print(numbers[0][0])
+
+'''
+List of lists of list!
+'''
+
+listy = [[[1, 2, 3],
+          [4, 5, 6],
+          [7, 8, 9]
+          ],
+         [["a", "b", "c"],
+          ["d", "e", "f"],
+          ["g", "h", "i"]
+          ],
+         [9, 8, 7]]
+print(listy)
+print(listy[0][2])
