@@ -80,3 +80,11 @@ listy = [[[1, 2, 3],
          [9, 8, 7]]
 print(listy)
 print(listy[0][2])
+
+'''
+List Methods
+
+list.index() returns the index of the item passed
+'''
+
+print(names.index("Lilly"))
