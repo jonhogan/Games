@@ -5,11 +5,10 @@ public class Challenge {
         int score = 800;
         int levelCompleted = 5;
         int bonus = 100;
-        int finalScore = score;
+        int finalScore = 0;
 
         if (gameOver){
-            finalScore += (levelCompleted * bonus);
-            finalScore += 1000;
+            finalScore = calculateScore(score, levelCompleted, bonus);
             System.out.println("Your final score was " + finalScore);
         }
 
@@ -19,12 +18,14 @@ public class Challenge {
         finalScore = score;
 
         if (gameOver){
-            finalScore += (levelCompleted * bonus);
+            finalScore = calculateScore(score, levelCompleted, bonus);
             System.out.println("Your final score was " + finalScore);
         }
     }
 
-    public static void calculateScore(){
+    public static int calculateScore(int thisScore, int thisLevelCompleted, int thisBonus){
+        int calcScore = thisScore + (thisLevelCompleted * thisBonus) + 1_000;
+        return (calcScore);
 
     }
 }
