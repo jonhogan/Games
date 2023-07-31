@@ -18,7 +18,10 @@ public class Main {
     }
 
     public static double convertToCentimeter(int feet, int inches){
-        int totalInches = (feet * 12) + inches;
-        return (totalInches * 2.54);
+        int feetToInches = (feet * 12);
+        double totalCentimeters = convertToCentimeter(feetToInches) +
+                                  convertToCentimeter(inches);
+
+        return totalCentimeters;
     }
 }
