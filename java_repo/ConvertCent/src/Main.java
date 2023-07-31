@@ -1,11 +1,13 @@
 public class Main {
     public static void main(String[] args) {
 
-        int feet = 8, inches = 11;
+        int feet = 5, inches = 68;
         double inCent;
 
         inCent = convertToCentimeter(inches);
         System.out.println(inches + " inches equals " + inCent + " centimeters.");
+
+        inches = 8;
 
         inCent = convertToCentimeter(feet, inches);
         System.out.println(feet + " feet and " + inches + " inches equals " + inCent +
@@ -22,6 +24,8 @@ public class Main {
         double totalCentimeters = convertToCentimeter(feetToInches) +
                                   convertToCentimeter(inches);
 
+        // This is redundant, I could have returned the above, without
+        // assigning it to a variable
         return totalCentimeters;
     }
 }
