@@ -25,6 +25,13 @@ public class Main {
                 break;
             }
         }
+
+        double rate = 7.5;
+        do{
+             System.out.println("Interest on $100.00 at " + rate +"% interest is: " +
+                                calculateInterest(100.0, rate));
+            rate += .25;
+        }while(rate <= 10);
     }
 
     public static double calculateInterest(double amount, double interestRate){
