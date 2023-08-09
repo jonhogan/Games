@@ -15,6 +15,7 @@ public class Main {
             sum = -1;
         }
 
+        //get the right most digit, then truncate it
         while (x > 0){
             sum += (x % 10);
             x = x / 10;
