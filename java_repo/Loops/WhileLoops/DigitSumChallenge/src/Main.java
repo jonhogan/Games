@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        int sumThis = 1000;
+        int sumThis = 321;
 
         System.out.println("The sum on of the numbers in " + sumThis + " is: " +
                 sumDigits(sumThis));
