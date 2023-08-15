@@ -66,7 +66,7 @@ public class Main {
 
             if(yearOfBirth < 0){
                 System.out.println("Year of birth must be a positive number.");
-            }else if ((currentYear - yearOfBirth) > 125){
+            }else if ((currentYear - yearOfBirth) > 124){
                 System.out.println("It is highly unlikely you are 125 or greater years old,"+
                         " please re-enter your birth year");
             }else{
