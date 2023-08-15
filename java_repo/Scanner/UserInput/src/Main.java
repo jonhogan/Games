@@ -51,9 +51,9 @@ public class Main {
         String birthYear = "";
         int yearOfBirth = 0;
 
-        boolean isNumber = false;
+        boolean validYear = false;
 
-        while(!isNumber){
+        while(!validYear){
             System.out.println("What year were you born? ");
             birthYear = scanner.nextLine();
             try {
@@ -70,7 +70,7 @@ public class Main {
                 System.out.println("It is highly unlikely you are 125 or greater years old,"+
                         " please re-enter your birth year");
             }else{
-                isNumber = true;
+                validYear = true;
             }
         }
 
