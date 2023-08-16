@@ -43,6 +43,8 @@ public class Main {
         System.out.println("Hello, " + name + ", it is nice to meet you.");
 
         int age = checkData(currentYear);
+        
+        scanner.close();
         return "You are " + age + " years old.";
     }
 
@@ -73,6 +75,8 @@ public class Main {
                 validYear = true;
             }
         }
+
+        scanner.close();
 
         return currentYear - yearOfBirth;
 
