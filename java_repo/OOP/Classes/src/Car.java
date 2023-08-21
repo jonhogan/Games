@@ -6,32 +6,24 @@ public class Car {
     private int numberOfDoors;
     private boolean convertible;
 
-   /* public void describeCar(){
-        System.out.println("Doors: " + numberOfDoors + "-Door\n" +
-                "Color: " + color + "\n" +
-                "Make: " + make + "\n" +
-                "Model: " + model + "\n" +
-                "Top: " + (convertible ? "Convertible" : "Hard Top"));
-    }*/
-
-    public void setMake(String thisMake){
-        make = thisMake;
+    public void setMake(String make){
+        this.make = make;
     }
 
-    public void setModel(String thisModel){
-        model = thisModel;
+    public void setModel(String model){
+        this.model = model;
     }
 
-    public void setNumberOfDoors(int doors){
-        numberOfDoors = doors;
+    public void setNumberOfDoors(int numberOfDoors){
+        this.numberOfDoors = numberOfDoors;
     }
 
-    public void setColor(String thisColor){
-        color = thisColor;
+    public void setColor(String color){
+        this.color = color;
     }
 
-    public void setConvertible(boolean isConvertible){
-        convertible = isConvertible;
+    public void setConvertible(boolean convertible){
+        this.convertible = convertible;
     }
 
     public void printCar(){
