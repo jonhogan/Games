@@ -43,4 +43,23 @@ public class Car {
                             "Style: " + (convertible ? "Convertible" : "Hard Top"));
     }
 
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getNumberOfDoors() {
+        return numberOfDoors;
+    }
+
+    public boolean isConvertible() {
+        return convertible;
+    }
 }
