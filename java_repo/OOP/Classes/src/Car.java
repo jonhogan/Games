@@ -6,13 +6,13 @@ public class Car {
     private int numberOfDoors;
     private boolean convertible;
 
-    public void describeCar(){
+   /* public void describeCar(){
         System.out.println("Doors: " + numberOfDoors + "-Door\n" +
                 "Color: " + color + "\n" +
                 "Make: " + make + "\n" +
                 "Model: " + model + "\n" +
                 "Top: " + (convertible ? "Convertible" : "Hard Top"));
-    }
+    }*/
 
     public void setMake(String thisMake){
         make = thisMake;
@@ -32,6 +32,15 @@ public class Car {
 
     public void setConvertible(boolean isConvertible){
         convertible = isConvertible;
+    }
+
+    public void printCar(){
+        System.out.println("Car Description:\n" +
+                            numberOfDoors + "-Door\n" +
+                            "Color: " + color + "\n" +
+                            "Make: " + make + "\n" +
+                            "Model: " + model + "\n" +
+                            "Style: " + (convertible ? "Convertible" : "Hard Top"));
     }
 
 }

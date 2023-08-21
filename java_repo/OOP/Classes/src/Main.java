@@ -19,6 +19,6 @@ public class Main {
         isConvertible = scanner.nextLine().toLowerCase();
         car.setConvertible(isConvertible.equals("yes"));
 
-        car.describeCar();
+        car.printCar();
     }
 }
