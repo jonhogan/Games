@@ -53,5 +53,42 @@ public class BankAccount {
         return matcher.matches();
     }
 
+    public void withDraw(double amnt){
+
+        if (balance - amnt < 0){
+            System.out.println("Insufficient balance");
+        }else{
+            balance -= amnt;
+
+            System.out.println("Balance: " + balance);
+        }
+
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public int getAcctNumber() {
+        return acctNumber;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void deposit(double amnt){
+        balance += amnt;
+        System.out.println("Balance: " + balance);
+    }
+
 
 }
